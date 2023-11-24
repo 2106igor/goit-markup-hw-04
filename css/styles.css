@@ -95,11 +95,9 @@ body {
 .headlink-title {
     display: flex;
     gap: 40px;
-}
-.studio-link {
     position: relative;
 }
-.studio-link::after {
+.headlink-title::after {
     content: "";
     display: block;
     width: 48px;
