@@ -67,6 +67,25 @@ body {
 }
 .header {
     border-bottom: 1px solid #e7e9fc
+    0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.studio {
+    position: relative;
+    color: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.studio::after {
+    content: "";
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #404BBF;
+    position: absolute;
+    top: 44px;
+    left: 0;
+    bottom: -1px;
 }
 .logo-head {
     color: #4D5AE5;
@@ -95,18 +114,8 @@ body {
 .headlink-title {
     display: flex;
     gap: 40px;
-    position: relative;
 }
-.headlink-title::after {
-    content: "";
-    display: block;
-    width: 48px;
-    height: 4px;
-    border-radius: 2px;
-    background-color: #404BBF;
-    position: absolute;
-    top: 44px;
-}
+
 .headlink {
     color: #2E2F42;
     font-size: 16px;
@@ -158,6 +167,9 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
+.contacts {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .address-link:hover {
     color: #404BBF;
     font-size: 16px;
@@ -190,6 +202,7 @@ body {
     url(../images/people-office.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     padding: 188px 0px;
     border: 1px solid #000;
     max-width: 1440px;
@@ -227,6 +240,7 @@ body {
     min-width: 169px;
     height: 56px;
     border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 .first-button:hover {
     color: #FFFFFF;
@@ -401,7 +415,9 @@ body {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .port-items-list:hover {
-    box-shadow: 0px 2px 1px 0px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .image-discription {
     position: relative;
@@ -452,7 +468,7 @@ body {
     transform: translateY(0%);
 }
 .footer {
-    display: block;
+    display: flex;
     color: #F4F4FD;
     background-color: #2E2F42;
     padding: 100px 0;
@@ -509,10 +525,18 @@ body {
     gap: 16px;
 }
 .social-media-link {
-    display: block;
+    display: flex;
     width: 40px;
-    height: 40px;    
+    height: 40px;
+    border-radius: 50%; 
+    background-color: #404BBF;   
 }
 .ellipse-icon-2 {
-    fill: #4D5AE5;
+    display: flex;
+    fill: #F4F4FD;
+    width: 24px;
+    height: 24px;
+    align-content: center;
+    justify-content: center;
+
 }
